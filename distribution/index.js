@@ -65,8 +65,6 @@ var asyncTimedFunc = function () {
   };
 }();
 
-require('babel-polyfill');
-
 var _chalk = require('chalk');
 
 var _chalk2 = _interopRequireDefault(_chalk);

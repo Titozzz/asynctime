@@ -5,7 +5,6 @@
 //  Created on 08/08/2016 By Thibault Malbranche
 //
 
-import 'babel-polyfill';
 import chalk from 'chalk';
 
 const shouldLog = {};
