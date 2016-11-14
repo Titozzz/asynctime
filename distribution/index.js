@@ -4,12 +4,24 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
+var _promise = require('babel-runtime/core-js/promise');
+
+var _promise2 = _interopRequireDefault(_promise);
+
+var _regenerator = require('babel-runtime/regenerator');
+
+var _regenerator2 = _interopRequireDefault(_regenerator);
+
+var _asyncToGenerator2 = require('babel-runtime/helpers/asyncToGenerator');
+
+var _asyncToGenerator3 = _interopRequireDefault(_asyncToGenerator2);
+
 var asyncTimedFunc = function () {
-  var _ref2 = _asyncToGenerator(regeneratorRuntime.mark(function _callee3(func, funcName) {
+  var _ref2 = (0, _asyncToGenerator3.default)(_regenerator2.default.mark(function _callee3(func, funcName) {
     var _this = this;
 
     var start, id;
-    return regeneratorRuntime.wrap(function _callee3$(_context3) {
+    return _regenerator2.default.wrap(function _callee3$(_context3) {
       while (1) {
         switch (_context3.prev = _context3.next) {
           case 0:
@@ -18,9 +30,9 @@ var asyncTimedFunc = function () {
 
             shouldLog[id] = true;
             _context3.next = 5;
-            return Promise.all([_asyncToGenerator(regeneratorRuntime.mark(function _callee2() {
+            return _promise2.default.all([(0, _asyncToGenerator3.default)(_regenerator2.default.mark(function _callee2() {
               var res;
-              return regeneratorRuntime.wrap(function _callee2$(_context2) {
+              return _regenerator2.default.wrap(function _callee2$(_context2) {
                 while (1) {
                   switch (_context2.prev = _context2.next) {
                     case 0:
@@ -71,19 +83,17 @@ var _chalk2 = _interopRequireDefault(_chalk);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, arguments); return new Promise(function (resolve, reject) { function step(key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { return Promise.resolve(value).then(function (value) { return step("next", value); }, function (err) { return step("throw", err); }); } } return step("next"); }); }; } //
+var shouldLog = {}; //
 //  index.js
 //  asynctime
 //
 //  Created on 08/08/2016 By Thibault Malbranche
 //
 
-var shouldLog = {};
-
 var logFunc = function () {
-  var _ref = _asyncToGenerator(regeneratorRuntime.mark(function _callee(funcName, start, id) {
+  var _ref = (0, _asyncToGenerator3.default)(_regenerator2.default.mark(function _callee(funcName, start, id) {
     var time;
-    return regeneratorRuntime.wrap(function _callee$(_context) {
+    return _regenerator2.default.wrap(function _callee$(_context) {
       while (1) {
         switch (_context.prev = _context.next) {
           case 0:
